@@ -2,9 +2,9 @@ version: '3.9'
 services:
   main:
     build:
-      context: ./docker
-      dockerfile: Dockerfile.compose
-    entrypoint: /compose-entrypoint.sh
+      context: .
+      dockerfile: docker/Dockerfile
+    image: automatisch:latest
     ports:
       - '3000:3000'
     depends_on:
